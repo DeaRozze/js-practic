@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const workers = [
+		{"name":"John","salary":500},
+		{"name":"Mike","salary":1300},
+		{"name":"Linda","salary":1500},
+  ];
+
+  const bestWorkers = workersArr => {
+    const worstWorkers = [];
+
+    for (let i = 0; i < workersArr.length; i++) {
+      const bestWorkers = workersArr[i];
+
+      if (bestWorkers.salary > 1000) {
+        worstWorkers.push(bestWorkers.name);
+      }
+    }
+
+    return worstWorkers;
+  }
+  
+  console.log(bestWorkers(workers))
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const string = 'Привет! Как дела?';
+
+    const vowels = ['и', "е", 'а']
+
+    const getVowels = filter => {
+      let finishResult = '';
+
+      for (let i = 0; i < filter.length; i++){
+        const current = filter[i];
+
+        if(vowels.includes(current)) {
+          finishResult = finishResult + current;
+        }
+        
+      }
+
+      return finishResult;
+    }
+
+    console.log(getVowels(string));
+  </script>
+</body>
+</html>
